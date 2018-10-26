@@ -33,7 +33,6 @@ class ViewController: UIViewController {
 
         // CoreMLモデルの準備
         model = try! VNCoreMLModel(for: ImageClassifier().model)
-        //        model = try! VNCoreMLModel(for: Inceptionv3().model)
 
         // Set the view's delegate
         sceneView.delegate = self
@@ -92,7 +91,9 @@ class ViewController: UIViewController {
     }
 
     func addLabel(for hitTestResult: ARHitTestResult) {
+        // ラベルノードを用意
         let labelNode = LabelNode()
+        // 場所を決める
         labelNode.transform = SCNMatrix4(hitTestResult.worldTransform)
         labels.append(labelNode)
         labelNode.classificationObservation = latestResult
@@ -123,7 +124,7 @@ extension ViewController: ARSCNViewDelegate {
                 }
 
                 // 信頼度が低い結果は採用しない
-                if best.confidence < 0.5 {
+                if best.confidence < 0.7 {
                     self.isPerformingCoreML = false
                     return
                 }
@@ -136,6 +137,7 @@ extension ViewController: ARSCNViewDelegate {
 
                 self.isPerformingCoreML = false
             })
+            // バックグラウンドで処理
             request.preferBackgroundProcessing = true
 
             // 画面の中心でクロップした画像を利用する

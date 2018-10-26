@@ -16,9 +16,9 @@
 		46261651217F2650007651AA /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 46261650217F2650007651AA /* ImageClassifier.mlmodel */; };
 		46261653217F297D007651AA /* LabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46261652217F297D007651AA /* LabelNode.swift */; };
 		46261655217F30DC007651AA /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 46261654217F30DC007651AA /* Inceptionv3.mlmodel */; };
-		46261657217F53A9007651AA /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46261656217F53A9007651AA /* SCNNode+Extensions.swift */; };
 		46E267EB21835B7400AF4011 /* VNClassificationObservation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E267EA21835B7400AF4011 /* VNClassificationObservation+Extensions.swift */; };
 		46E267ED2183614200AF4011 /* TextSample.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46E267EC2183614200AF4011 /* TextSample.scn */; };
+		46E267EF21836A5300AF4011 /* fontopoSUBWAY-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46E267EE21836A5300AF4011 /* fontopoSUBWAY-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +34,9 @@
 		46261650217F2650007651AA /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
 		46261652217F297D007651AA /* LabelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelNode.swift; sourceTree = "<group>"; };
 		46261654217F30DC007651AA /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = SOURCE_ROOT; };
-		46261656217F53A9007651AA /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extensions.swift"; sourceTree = "<group>"; };
 		46E267EA21835B7400AF4011 /* VNClassificationObservation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+Extensions.swift"; sourceTree = "<group>"; };
 		46E267EC2183614200AF4011 /* TextSample.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = TextSample.scn; sourceTree = "<group>"; };
+		46E267EE21836A5300AF4011 /* fontopoSUBWAY-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontopoSUBWAY-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +80,9 @@
 				46261650217F2650007651AA /* ImageClassifier.mlmodel */,
 				4626164F217F1DE8007651AA /* CreateMLSample.playground */,
 				46261652217F297D007651AA /* LabelNode.swift */,
-				46261656217F53A9007651AA /* SCNNode+Extensions.swift */,
 				46E267EA21835B7400AF4011 /* VNClassificationObservation+Extensions.swift */,
 				46E267EC2183614200AF4011 /* TextSample.scn */,
+				46E267EE21836A5300AF4011 /* fontopoSUBWAY-Regular.otf */,
 			);
 			path = EasyARMLSample;
 			sourceTree = "<group>";
@@ -150,6 +150,7 @@
 				46E267ED2183614200AF4011 /* TextSample.scn in Resources */,
 				46261644217F1D5F007651AA /* Assets.xcassets in Resources */,
 				46261642217F1D5E007651AA /* Main.storyboard in Resources */,
+				46E267EF21836A5300AF4011 /* fontopoSUBWAY-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +166,6 @@
 				4626163F217F1D5E007651AA /* ViewController.swift in Sources */,
 				46261651217F2650007651AA /* ImageClassifier.mlmodel in Sources */,
 				46261653217F297D007651AA /* LabelNode.swift in Sources */,
-				46261657217F53A9007651AA /* SCNNode+Extensions.swift in Sources */,
 				4626163B217F1D5E007651AA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

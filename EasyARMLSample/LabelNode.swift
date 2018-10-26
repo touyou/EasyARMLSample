@@ -18,14 +18,17 @@ class LabelNode: SCNNode {
     }
 
     func addTextNode() {
-        guard var text = classificationObservation?.identifier else { return }
-        print(text)
+        guard let text = classificationObservation?.identifier else { return }
+        let node: SCNNode
         if text == "jack" {
-            text = "ジャックオーランタン"
+            let scene = SCNScene(named: "TextSample.scn")
+            node = scene!.rootNode
+            node.scale = SCNVector3Make(0.02, 0.02, 0.02)
         } else {
-            text = "コウモリ"
+            let scene = SCNScene(named: "TextSample.scn")
+            node = scene!.rootNode
+            node.scale = SCNVector3Make(0.02, 0.02, 0.02)
         }
-        let node = SCNNode.textNode(text: text)
 
         DispatchQueue.main.async {
             self.addChildNode(node)
